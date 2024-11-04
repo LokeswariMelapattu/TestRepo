@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="075cc222583d46379e34da8f5782793e" Name="Diagram1" ZoomLevel="56">
+
+        <EntityTypeShape EntityType="CustomerServiceModel.ACCOUNT_MANAGER" Width="1.5" PointX="7.444632934147787" PointY="31.454421847804646" />
+        <EntityTypeShape EntityType="CustomerServiceModel.ADDRESS" Width="1.5" PointX="7.6439592799376506" PointY="9.97383478748325" />
+        <EntityTypeShape EntityType="CustomerServiceModel.AREA" Width="1.5" PointX="2.25" PointY="33.375" />
+        <EntityTypeShape EntityType="CustomerServiceModel.BENEFICIARY_GROUP" Width="1.5" PointX="0.31791819460593079" PointY="3.8960852492116786" />
+        <EntityTypeShape EntityType="CustomerServiceModel.BENEFICIARY_PIN_LOG" Width="1.5" PointX="10.679764961209038" PointY="7.711144361510474" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CITY" Width="1.5" PointX="3.973052319126694" PointY="5.8363093462941746" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CONTACT" Width="1.5" PointX="5.487229778192579" PointY="30.143860488265688" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CONTACT_TYPE" Width="1.5" PointX="2.6826115374838055" PointY="26.777257514548143" />
+        <EntityTypeShape EntityType="CustomerServiceModel.COUNTRY" Width="1.5" PointX="10.408849389482686" PointY="10.069939349810564" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER" Width="1.5" PointX="0.19261628584592433" PointY="28.459066523452787" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_ACCOUNT_TYPE" Width="1.5" PointX="8.9981244360088013" PointY="0.8814605478576667" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_BALANCE" Width="1.5" PointX="7.0578365004890777" PointY="25.645329815170417" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_CLASSIFICATION" Width="1.5" PointX="8.1156025231422877" PointY="8.6742821376185315" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_PIN_LOG" Width="1.5" PointX="0.23519855003580381" PointY="3.9312692451902058" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_REQUEST_TYPE" Width="1.5" PointX="1.0254352619058618" PointY="25.870104995495687" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_STATUS" Width="1.5" PointX="0.77848177439462485" PointY="30.110025717928085" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_STATUS_REASON" Width="1.5" PointX="1.3073141674079531" PointY="4.6737387500115384" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_TYPE" Width="1.5" PointX="7.625" PointY="23.5" />
+        <EntityTypeShape EntityType="CustomerServiceModel.DEPOT" Width="1.5" PointX="14.25" PointY="14.75" />
+        <EntityTypeShape EntityType="CustomerServiceModel.FAMILY" Width="1.5" PointX="0.76052274776647" PointY="25.545770373915214" />
+        <EntityTypeShape EntityType="CustomerServiceModel.FINANCIAL_ACCOUNT_TYPE" Width="1.5" PointX="2.8663601609255931" PointY="4.3887153288296963" />
+        <EntityTypeShape EntityType="CustomerServiceModel.INVOICE" Width="1.5" PointX="7.8338426350773505" PointY="17.059099443750036" />
+        <EntityTypeShape EntityType="CustomerServiceModel.INVOICE_STATUS" Width="1.5" PointX="4.028600409640279" PointY="4.6125233045837488" />
+        <EntityTypeShape EntityType="CustomerServiceModel.INVOICE_STATUS_HISTORY" Width="1.5" PointX="4.375" PointY="18.25" />
+        <EntityTypeShape EntityType="CustomerServiceModel.LANGUAGE" Width="1.5" PointX="1.375" PointY="27.5" />
+        <EntityTypeShape EntityType="CustomerServiceModel.LOOKUPS" Width="1.5" PointX="1.9716238425912447" PointY="6.6635369391476438" />
+        <EntityTypeShape EntityType="CustomerServiceModel.MONTH" Width="1.5" PointX="9.8879702714681486" PointY="11.054170107028526" />
+        <EntityTypeShape EntityType="CustomerServiceModel.NATIONALITY" Width="1.5" PointX="10.278512421193771" PointY="13.283525771127794" />
+        <EntityTypeShape EntityType="CustomerServiceModel.NOTIFICATION_CHANNEL" Width="1.5" PointX="9.26298979356093" PointY="29.646905987359073" />
+        <EntityTypeShape EntityType="CustomerServiceModel.NOTIFICATION_LANGUAGE" Width="1.5" PointX="0.19833461018201642" PointY="25.510436844784039" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PAYMENT_METHOD" Width="1.5" PointX="10" PointY="19.375" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PAYMENT_TYPE" Width="1.5" PointX="7.9012183900462549" PointY="27.721245629583134" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PERSONALIZATION_ORDER_REASON" Width="1.5" PointX="8.9446773868727849" PointY="8.12015636643402" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PERSONALIZATION_ORDER_STATUS" Width="1.5" PointX="5.0246908799860126" PointY="11.422922676160431" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PERSONALIZATION_ORDER_TYPE" Width="1.5" PointX="0.37348001467691733" PointY="7.0814257595135954" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PRODUCT" Width="1.5" PointX="8.8790084556113023" PointY="7.1365813497158612" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RECEIPT_TYPE" Width="1.5" PointX="6.5" PointY="17.75" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP" Width="1.5" PointX="15" PointY="4.375" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_DATE" Width="1.5" PointX="11.5" PointY="19.375" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_PRODUCT" Width="1.5" PointX="4.75" PointY="23.5" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_STATIONS" Width="1.5" PointX="11.5" PointY="21.5" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_TOKEN" Width="1.5" PointX="13.625" PointY="1.5" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_WEEKDAY" Width="1.5" PointX="6.875" PointY="26.125" />
+        <EntityTypeShape EntityType="CustomerServiceModel.SMS_MESSAGE" Width="1.5" PointX="8.1932934449023076" PointY="3.1173728420945688" />
+        <EntityTypeShape EntityType="CustomerServiceModel.STATION" Width="1.5" PointX="4.78501885234612" PointY="27.4947517344238" />
+        <EntityTypeShape EntityType="CustomerServiceModel.STATION_GROUP" Width="1.5" PointX="1.8811988653061906" PointY="30.473602979664506" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TIME_FREQUENCY" Width="1.5" PointX="3.8909605461596328" PointY="19.288247430365647" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TOKEN" Width="3.75" PointX="17.125" PointY="29.875" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TOKEN_IIN" Width="1.5" PointX="3.1138754259393906" PointY="7.6844541615268467" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TOKEN_TYPE" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_COLOR" Width="1.5" PointX="7.4915389360354929" PointY="18.084834032731518" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_INFO" Width="1.5" PointX="11.5" PointY="29.5" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_MODEL" Width="1.5" PointX="10.373945015656737" PointY="31.097528874453868" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_STATE" Width="1.5" PointX="10.188026038086054" PointY="16.249718450126107" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_TYPE" Width="1.5" PointX="9.06317755443192" PointY="7.893546748856803" />
+        <EntityTypeShape EntityType="CustomerServiceModel.WEEK_DAYS" Width="1.5" PointX="10.625" PointY="25.875" />
+        <EntityTypeShape EntityType="CustomerServiceModel.WORK_ORDER_REASON" Width="1.5" PointX="7.5" PointY="0.625" />
+        <EntityTypeShape EntityType="CustomerServiceModel.WORK_ORDER_STATUS" Width="1.5" PointX="5.25" PointY="6.625" />
+        <EntityTypeShape EntityType="CustomerServiceModel.WORK_ORDER_STATUS_HISTORY" Width="1.5" PointX="4.962378917710101" PointY="11.813262244599528" />
+        <EntityTypeShape EntityType="CustomerServiceModel.WORK_ORDER_TYPE" Width="1.5" PointX="11.625" PointY="29.375" />
+        <EntityTypeShape EntityType="CustomerServiceModel.YEAR" Width="1.5" PointX="9.0041444585677919" PointY="3.5133896337418768" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R10" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R05" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R06" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R08" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032083" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032084" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032085" />
+        <AssociationConnector Association="CustomerServiceModel.INVENTORYCITYAREA_R001" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_GROUP_R005" />
+        <AssociationConnector Association="CustomerServiceModel.INVENTORYCOUNTRYCITY_R001" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032569" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R01" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R02" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R03" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R04" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R09" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R11" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R14" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R15" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R16" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R17" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R20" />
+        <AssociationConnector Association="CustomerServiceModel.MESSAGE_CUSTOMER_R01" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032130" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032142" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032436" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0031866" />
+        <AssociationConnector Association="CustomerServiceModel.INVOICE_STATUS_HISTORY_R02" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032216" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032223" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0031966" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0031961" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0031965" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032267" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032426" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032488" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032427" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032489" />
+        <AssociationConnector Association="CustomerServiceModel.RESTRICTION_GROUP_WEEKDAY_R01" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032272" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032434" />
+        <AssociationConnector Association="CustomerServiceModel.TOKEN_R07" />
+        <AssociationConnector Association="CustomerServiceModel.TOKEN_IIN_TYPE_R001" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032282" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032284" />
+        <AssociationConnector Association="CustomerServiceModel.VEHICLE_INFO_R04" />
+        <AssociationConnector Association="CustomerServiceModel.WORKORDER_REASONTYPE_R01" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032453" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_RECEIPT_PREFERENCE" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_CONTACT" Width="1.5" PointX="12.25" PointY="32" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_CONTACT_RXX03" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032136" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0032137" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_PAYMENT" Width="1.5" PointX="11.534289462275005" PointY="12.491137897824467" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_BALANCE_R003" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C006109" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C006110" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_PRODUCT_UPLIFT" Width="1.5" PointX="10.671981224171809" PointY="23.562443759088612" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PRODUCT_PRICE_UPLIFT" Width="1.5" PointX="0.5" PointY="19" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0047826" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0047827" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0047821" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_STATUS_CHANGE_LOG" Width="1.5" PointX="3.4556533561347305" PointY="12.373351505200077" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012493" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012491" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012492" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_REGISTER" Width="1.5" PointX="9.5332717548745087" PointY="11.410234322496798" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012612" />
+        <AssociationConnector Association="CustomerServiceModel.VEHICLE_REGISTER_R02" />
+        <EntityTypeShape EntityType="CustomerServiceModel.BENEFICIARY_STATUS" Width="1.5" PointX="4.8652616948193224" PointY="25.542500627014089" />
+        <EntityTypeShape EntityType="CustomerServiceModel.BENEFICIARY_STATUS_CHANGE_LOG" Width="1.5" PointX="8.9940474391887175" PointY="8.8752467971645519" />
+        <EntityTypeShape EntityType="CustomerServiceModel.BENEFICIARY_STATUS_REASON" Width="1.5" PointX="8" PointY="10" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TOKEN_STATUS" Width="1.5" PointX="7.375" PointY="22.125" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TOKEN_STATUS_CHANGE_HISTORY" Width="1.5" PointX="10.125" PointY="27.625" />
+        <EntityTypeShape EntityType="CustomerServiceModel.TOKEN_STATUS_REASON" Width="1.5" PointX="4.5727657175496059" PointY="11.056188365005044" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012170" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012531" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012532" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012760" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012761" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012773" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012774" />
+        <AssociationConnector Association="CustomerServiceModel.TOKEN_STATUS_R01" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C0012775" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_MAKE" Width="1.5" PointX="10.194471654572745" PointY="10.036484410071971" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005000" />
+        <AssociationConnector Association="CustomerServiceModel.VEHICLE_REGISTER_R01" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PRINTER" Width="1.5" PointX="2.2185764025051968" PointY="22.122050072123319" />
+        <EntityTypeShape EntityType="CustomerServiceModel.SHIFT_TYPE" Width="1.5" PointX="11.554620617793232" PointY="15.464834175754726" />
+        <EntityTypeShape EntityType="CustomerServiceModel.REQUEST_STATUS" Width="1.5" PointX="3.75" PointY="32.125" />
+        <EntityTypeShape EntityType="CustomerServiceModel.SHIFT_STATUS" Width="1.5" PointX="11.875" PointY="22" />
+        <EntityTypeShape EntityType="CustomerServiceModel.LOCATION" Width="1.5" PointX="12.125" PointY="25.5" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005195" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005262" />
+        <AssociationConnector Association="CustomerServiceModel.LOCATION_PARENT_ID_R001" />
+        <EntityTypeShape EntityType="CustomerServiceModel.SHIFT" Width="1.5" PointX="5.3163222248276334" PointY="22.627836044238805" />
+        <EntityTypeShape EntityType="CustomerServiceModel.USERS" Width="1.5" PointX="3.0866735293933534" PointY="12.749632677412421" />
+        <AssociationConnector Association="CustomerServiceModel.ACCOUNT_MANAGER_R01" />
+        <AssociationConnector Association="CustomerServiceModel.FK_SHIFT_LOCATION_R004" />
+        <AssociationConnector Association="CustomerServiceModel.FK_SHIFT_SHIFT_STATUS_R002" />
+        <AssociationConnector Association="CustomerServiceModel.FK_SHIFT_SHIFTTYPE_R001" />
+        <AssociationConnector Association="CustomerServiceModel.FK_SHIFT_USER_R003" />
+        <AssociationConnector Association="CustomerServiceModel.FK_SHIFTENDEDBY_USER_R004" />
+        <AssociationConnector Association="CustomerServiceModel.PERS_ORDR_RSN_R01" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_STATUS_CHANGE__R03" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_STATUS_CHANGE_LOG_R04" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005861" />
+        <EntityTypeShape EntityType="CustomerServiceModel.EMAIL_NOTIFICATION" Width="1.5" PointX="10.25" PointY="22.375" />
+        <EntityTypeShape EntityType="CustomerServiceModel.IDENTIFICATION_TYPE" Width="1.5" PointX="7.3963665437867707" PointY="30.833865329080197" />
+        <EntityTypeShape EntityType="CustomerServiceModel.WORK_ORDER" Width="1.5" PointX="8.5659772681845254" PointY="10.308639933498874" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_R19" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005267" />
+        <AssociationConnector Association="CustomerServiceModel.IDENTIFICATION_WORK_ORDER_FK" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005401" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005268" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005269" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005270" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005417" />
+        <AssociationConnector Association="CustomerServiceModel.WORK_ORDER_R05" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CSP_REQUEST_STATUS" Width="1.5" PointX="1.4615813910316589" PointY="14.569456390370362" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CSP_REQUEST_TYPE" Width="1.5" PointX="1.7030852389070603" PointY="1.821818814529953" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CSP_REQUEST_ATTACHEMENT" Width="1.5" PointX="9.25" PointY="5.125" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CUSTOMER_ATTACHMENT" Width="1.5" PointX="3.1942572515431129" PointY="13.270477658729291" />
+        <AssociationConnector Association="CustomerServiceModel.CUSTOMER_ATTACHMENT_FK" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_QUANTITY" Width="1.5" PointX="6.7392372930139475" PointY="7.8295184261303019" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005223" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005224" />
+        <AssociationConnector Association="CustomerServiceModel.RESTRICTION_GROUP_QUANTITY_R03" />
+        <AssociationConnector Association="CustomerServiceModel.EMAIL_NOTIFICATION_FK1" />
+        <EntityTypeShape EntityType="CustomerServiceModel.BENEFICIARY" Width="1.5" PointX="4.875" PointY="19.875" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_ADDRESS_R0007" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_CUSTOMER_R005" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R005" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R01" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R02" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R03" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R04" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R05" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_R06" />
+        <AssociationConnector Association="CustomerServiceModel.BENEFICIARY_STATUS_R0007" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CURRENCY" Width="1.5" PointX="5.4354463803746951" PointY="1.1503785108916362" />
+        <EntityTypeShape EntityType="CustomerServiceModel.ERP_CUSTOMER" Width="1.5" PointX="2.8402022639476705" PointY="10.033369486235721" />
+        <EntityTypeShape EntityType="CustomerServiceModel.ERP_GL_ACCOUNT" Width="1.5" PointX="7.4619840101627553" PointY="15.301313928934427" />
+        <EntityTypeShape EntityType="CustomerServiceModel.ERP_EMPLOYEE" Width="1.5" PointX="7.7875130678468913" PointY="21.738332147588178" />
+        <EntityTypeShape EntityType="CustomerServiceModel.NOTIFICATION_MESSAGE" Width="1.5" PointX="5.3855374443277428" PointY="11.641323705968132" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RQST_REQUEST_ATTACHEMENT" Width="1.5" PointX="2.7423171804949256" PointY="5.1236756318824721" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RQST_REQUEST_CUSTOMER_CONTACT" Width="1.5" PointX="1.6608093947455331" PointY="5.6283582624180051" />
+        <AssociationConnector Association="CustomerServiceModel.RQST_FK_CONTACT_TYPE" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RQST_REQUEST_CONTACT" Width="1.5" PointX="3.7576507570956137" PointY="31.048575832996786" />
+        <AssociationConnector Association="CustomerServiceModel.RQST_FK_REQUEST_CONTACT" />
+        <AssociationConnector Association="CustomerServiceModel.RQST_FK_USER_REQUEST_CONTACT" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RQST_REQUEST_CUSTOMER_ADDRESS" Width="1.5" PointX="6.248494676430008" PointY="15.863117135997451" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RQST_RQST_CUSTOMER_CNTCT_HIST" Width="3.625" PointX="6" PointY="159.625" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RQST_REQUEST_CONTACT_HIST" Width="1.5" PointX="6.1460298998961367" PointY="31.689990326617838" />
+        <AssociationConnector Association="CustomerServiceModel.FK_RQST_RQST_CUSTOMER_CNT_01" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CARD_CENTER" Width="1.5" PointX="11.441515663378647" PointY="23.185119118162021" />
+        <EntityTypeShape EntityType="CustomerServiceModel.PERSONALIZATION_ORDER" PointX="3" PointY="159" Width="2.5" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005277" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005787" />
+        <AssociationConnector Association="CustomerServiceModel.PERSONALIZATION_ORDER_R0001" />
+        <AssociationConnector Association="CustomerServiceModel.PERSONALIZATION_ORDER_R01" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005788" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C005789" />
+        <EntityTypeShape EntityType="CustomerServiceModel.CEILING_LIMIT" Width="1.5" PointX="2.2777445922967718" PointY="23.599442329071202" />
+        <AssociationConnector Association="CustomerServiceModel.FINANCIAL_YEAR_START_FK" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_TIME" Width="1.5" PointX="17.625" PointY="6.125" />
+        <AssociationConnector Association="CustomerServiceModel.RESTRICTION_GROUP_TIME_R01" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_AMOUNT" Width="1.5" PointX="18" PointY="11.875" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C009669" />
+        <AssociationConnector Association="CustomerServiceModel.RESTRICTION_GROUP_AMOUNT_R01" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_TRANS_NO" Width="1.5" PointX="20.75" PointY="11.875" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C009682" />
+        <AssociationConnector Association="CustomerServiceModel.RESTRICTION_GROUP_TRANS_NO_R02" />
+        <EntityTypeShape EntityType="CustomerServiceModel.RESTRICTION_GROUP_TRANSACTION" Width="1.5" PointX="18" PointY="2" />
+        <AssociationConnector Association="CustomerServiceModel.SYS_C009680" />
+        <EntityTypeShape EntityType="CustomerServiceModel.VEHICLE_INFO_DUMMY" Width="1.5" PointX="16.875" PointY="16.875" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

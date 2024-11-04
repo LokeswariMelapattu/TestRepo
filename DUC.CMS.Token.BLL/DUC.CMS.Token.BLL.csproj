@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48285619-E10F-4521-B4F2-B43C5BE43CB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DUC.CMS.Token.BLL</RootNamespace>
+    <AssemblyName>DUC.CMS.Token.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MOI.VehicleInfo">
+      <HintPath>..\..\..\..\WOQOD_APC\DUC.WOQOD.APC.IntegrationAPI\MOI.VehicleInfo\bin\Debug\MOI.VehicleInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AccountMapSearchDTO.cs" />
+    <Compile Include="DTO\AccountTokenSearchDTO.cs" />
+    <Compile Include="DTO\BaseDTO.cs" />
+    <Compile Include="DTO\BatchTokenDTO.cs" />
+    <Compile Include="DTO\BatchTokenDTODetails.cs" />
+    <Compile Include="DTO\BatchTokenVehicleMapDTO.cs" />
+    <Compile Include="DTO\BatchBeneficiaryDTO.cs" />
+    <Compile Include="DTO\ConsumedTransNoResultDTO.cs" />
+    <Compile Include="DTO\ConsumedQuantityResultDTO.cs" />
+    <Compile Include="DTO\CustomerTokenSearchDTO.cs" />
+    <Compile Include="DTO\ProductCategroryRestrictionDTO.cs" />
+    <Compile Include="DTO\ConsumedAmountResultDTO.cs" />
+    <Compile Include="DTO\RestrictionGroupTimeDTO.cs" />
+    <Compile Include="DTO\TokensToDeliverResultDTO.cs" />
+    <Compile Include="DTO\StationDTO.cs" />
+    <Compile Include="DTO\TrafficvehicleSearchResultDTO.cs" />
+    <Compile Include="DTO\TrafficvehicleSearchDTO.cs" />
+    <Compile Include="DTO\GetVehicleInfoDTO.cs" />
+    <Compile Include="DTO\CurrencyDTO.cs" />
+    <Compile Include="DTO\DictionaryDTO.cs" />
+    <Compile Include="DTO\MapTokenDTO.cs" />
+    <Compile Include="DTO\MapBeneficiaryDTO.cs" />
+    <Compile Include="DTO\MapCustomerDTO.cs" />
+    <Compile Include="DTO\DriverCardDTO.cs" />
+    <Compile Include="DTO\DriverCardSearchDTO.cs" />
+    <Compile Include="DTO\IssueTokenDTO.cs" />
+    <Compile Include="DTO\MapSearchDTO.cs" />
+    <Compile Include="DTO\PersonalizationOrderDTO.cs" />
+    <Compile Include="DTO\PersonalizationOrderStatusDTO.cs" />
+    <Compile Include="DTO\PersonalizationOrderTypesDTO.cs" />
+    <Compile Include="DTO\ProductDTO.cs" />
+    <Compile Include="DTO\PropertyDTO.cs" />
+    <Compile Include="DTO\RestrictionAmountDTO.cs" />
+    <Compile Include="DTO\RestrictionGroupDTO.cs" />
+    <Compile Include="DTO\RestrictionProductDTO.cs" />
+    <Compile Include="DTO\RestrictionQuantityDTO.cs" />
+    <Compile Include="DTO\RestrictionStationDTO.cs" />
+    <Compile Include="DTO\RestrictionSummaryDTO.cs" />
+    <Compile Include="DTO\RestrictionTransactionDTO.cs" />
+    <Compile Include="DTO\RestrictionTransNoDTO.cs" />
+    <Compile Include="DTO\RestrictionWeekDayDTO.cs" />
+    <Compile Include="DTO\SearchTokenToDeliverDTO.cs" />
+    <Compile Include="DTO\TokenToDeliverDTO.cs" />
+    <Compile Include="DTO\StatusDTO.cs" />
+    <Compile Include="DTO\StatusReasonDTO.cs" />
+    <Compile Include="DTO\TimeFrequencyDTO.cs" />
+    <Compile Include="DTO\TokenDTO.cs" />
+    <Compile Include="DTO\TokenRestrictionDTO.cs" />
+    <Compile Include="DTO\TokenSearchDTO.cs" />
+    <Compile Include="DTO\TokenStatusDTO.cs" />
+    <Compile Include="DTO\TokenStatusHistoryDTO.cs" />
+    <Compile Include="DTO\TokenTypeDTO.cs" />
+    <Compile Include="DTO\UnmappedTokenSearchDTO.cs" />
+    <Compile Include="DTO\VehicleDepotDTO.cs" />
+    <Compile Include="DTO\VehicleDummyInfoDTO.cs" />
+    <Compile Include="DTO\VehicleInfoDTO.cs" />
+    <Compile Include="DTO\VehicleMakeDTO.cs" />
+    <Compile Include="DTO\VehicleMakeModelDTO.cs" />
+    <Compile Include="DTO\VehicleModelDTO.cs" />
+    <Compile Include="DTO\VehiclePlateColorDTO.cs" />
+    <Compile Include="DTO\VehicleRegister.cs" />
+    <Compile Include="DTO\VehicleRegisterDTO.cs" />
+    <Compile Include="DTO\VehicleRegisterSearchResultDTO.cs" />
+    <Compile Include="DTO\VehicleStateDTO.cs" />
+    <Compile Include="DTO\AppointmentDTO.cs" />
+    <Compile Include="DTO\VehicleTypesDTO.cs" />
+    <Compile Include="DTO\WorkOrderDTO.cs" />
+    <Compile Include="DTO\WorkOrderStatusDTO.cs" />
+    <Compile Include="DTO\WorkOrderTypeDTO.cs" />
+    <Compile Include="LinqExtension.cs" />
+    <Compile Include="Mappers\AccountMapSearchMapper.cs" />
+    <Compile Include="Mappers\AccountTokenSearchMapper.cs" />
+    <Compile Include="Mappers\BaseMapper.cs" />
+    <Compile Include="Mappers\BatchBeneficiaryMapper.cs" />
+    <Compile Include="Mappers\BatchTokenMapper.cs" />
+    <Compile Include="Mappers\BatchTokenVehicleMapMapper.cs" />
+    <Compile Include="Mappers\ConsumedTransNoMapper.cs" />
+    <Compile Include="Mappers\ConsumedQuantityMapper.cs" />
+    <Compile Include="Mappers\ConsumedAmountMapper.cs" />
+    <Compile Include="Mappers\RestrictionGroupTimeMapper.cs" />
+    <Compile Include="Mappers\StationMappers.cs" />
+    <Compile Include="Mappers\TrafficMapper.cs" />
+    <Compile Include="Mappers\DictionaryMapper.cs" />
+    <Compile Include="Mappers\DriverCardMapper.cs" />
+    <Compile Include="Mappers\IssueTokenMapper.cs" />
+    <Compile Include="Mappers\MapSearchMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderStatusMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderTypesMappers.cs" />
+    <Compile Include="Mappers\ProductMapper.cs" />
+    <Compile Include="Mappers\PropertyMapper.cs" />
+    <Compile Include="Mappers\RestrictionAmountMapper.cs" />
+    <Compile Include="Mappers\RestrictionGroupMapper.cs" />
+    <Compile Include="Mappers\RestrictionProductMapper.cs" />
+    <Compile Include="Mappers\RestrictionQuantityMapper.cs" />
+    <Compile Include="Mappers\RestrictionStationMapper.cs" />
+    <Compile Include="Mappers\RestrictionSummaryMapper.cs" />
+    <Compile Include="Mappers\RestrictionTransactionMapper.cs" />
+    <Compile Include="Mappers\RestrictionTransNoMapper.cs" />
+    <Compile Include="Mappers\RestrictionWeekDayMapper.cs" />
+    <Compile Include="Mappers\SearchTokensReadyForDeliveryMapper.cs" />
+    <Compile Include="Mappers\TimeFrequencyMapper.cs" />
+    <Compile Include="Mappers\TokenMapper.cs" />
+    <Compile Include="Mappers\TokenRestrictionMapper.cs" />
+    <Compile Include="Mappers\TokenSearchMapper.cs" />
+    <Compile Include="Mappers\TokenStatusHistoryMapper.cs" />
+    <Compile Include="Mappers\TokenStatusMapper.cs" />
+    <Compile Include="Mappers\TokenStatusReasonMapper.cs" />
+    <Compile Include="Mappers\TokenTypeMapper.cs" />
+    <Compile Include="Mappers\UnmappedTokenSearchMapper.cs" />
+    <Compile Include="Mappers\VehicleDepotMapper.cs" />
+    <Compile Include="Mappers\VehicleInfoMapper.cs" />
+    <Compile Include="Mappers\VehicleMakeMapper.cs" />
+    <Compile Include="Mappers\VehicleMakeModelMapper.cs" />
+    <Compile Include="Mappers\VehicleModelMapper.cs" />
+    <Compile Include="Mappers\VehiclePlateColorMapper.cs" />
+    <Compile Include="Mappers\VehicleRegisterMapper.cs" />
+    <Compile Include="Mappers\VehicleRegisterSearchMapper.cs" />
+    <Compile Include="Mappers\VehicleStateMapper.cs" />
+    <Compile Include="Mappers\VehicleTypeMapper.cs" />
+    <Compile Include="Mappers\WorkOrderMapper.cs" />
+    <Compile Include="Mappers\WorkOrderStatusMapper.cs" />
+    <Compile Include="Mappers\WorkOrderTypeMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TokenAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.CustomerService.DAL\DUC.CMS.CustomerService.DAL.csproj">
+      <Project>{f3e35610-1ac3-4a40-ae8e-cd27f80d6ef5}</Project>
+      <Name>DUC.CMS.CustomerService.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrafficData.DAL\TrafficData.DAL.csproj">
+      <Project>{57cacacf-8916-4033-a307-903d4c20bb4f}</Project>
+      <Name>TrafficData.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

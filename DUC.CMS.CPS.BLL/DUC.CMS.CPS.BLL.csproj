@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FCA9A82-D793-4C88-82A1-D3579F6AA5FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DUC.CMS.CPS.BLL</RootNamespace>
+    <AssemblyName>DUC.CMS.CPS.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CPSAppService.cs" />
+    <Compile Include="DTO\BaseDTO.cs" />
+    <Compile Include="DTO\CardCenterDTO.cs" />
+    <Compile Include="DTO\CustomerCardSearchDTO.cs" />
+    <Compile Include="DTO\CustomerTagSearchDTO.cs" />
+    <Compile Include="DTO\DepotDTO.cs" />
+    <Compile Include="DTO\InventoryReasonDTO.cs" />
+    <Compile Include="DTO\LocationDto.cs" />
+    <Compile Include="DTO\PersonalizationOrderSearchDTO.cs" />
+    <Compile Include="DTO\PersonalizationOrderSearchInputDTO.cs" />
+    <Compile Include="DTO\PersonalizationOrderStatusDTO.cs" />
+    <Compile Include="DTO\PersonalizationOrderTypeDTO.cs" />
+    <Compile Include="DTO\PersonalizedDataDTO.cs" />
+    <Compile Include="DTO\PrinterDTO.cs" />
+    <Compile Include="DTO\PrinterQueueDTO.cs" />
+    <Compile Include="DTO\PrintingStatusDTO.cs" />
+    <Compile Include="DTO\QualityAssuranceDTO.cs" />
+    <Compile Include="DTO\ShiftDTO.cs" />
+    <Compile Include="DTO\ShiftTypeDTO.cs" />
+    <Compile Include="DTO\WorkOrderDataDTO.cs" />
+    <Compile Include="DTO\WorkOrderDetailsDTO.cs" />
+    <Compile Include="DTO\WorkOrderRemovalDataDTO.cs" />
+    <Compile Include="DTO\WorkOrderSearchDTO.cs" />
+    <Compile Include="DTO\WorkOrderSearchResultDTO.cs" />
+    <Compile Include="DTO\WORK_ORDER_STATUSDTO.cs" />
+    <Compile Include="DTO\WORK_ORDER_TYPEDTO.cs" />
+    <Compile Include="LinqExtension.cs" />
+    <Compile Include="Mappers\CardCenterMapper.cs" />
+    <Compile Include="Mappers\CustomerTagSearchMapper.cs" />
+    <Compile Include="Mappers\DepotMapper.cs" />
+    <Compile Include="Mappers\InventoryReasonMapper.cs" />
+    <Compile Include="Mappers\LocationMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderSearchInputMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderSearchMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderStatusMapper.cs" />
+    <Compile Include="Mappers\PersonalizationOrderTypeMapper.cs" />
+    <Compile Include="Mappers\PersonalizedDataMapper.cs" />
+    <Compile Include="Mappers\PrinterMapper.cs" />
+    <Compile Include="Mappers\CustomerCardSearchMapper.cs" />
+    <Compile Include="Mappers\PrinterQueueMapper.cs" />
+    <Compile Include="Mappers\PrintingStatusMapper.cs" />
+    <Compile Include="Mappers\QualityAssuranceMapper.cs" />
+    <Compile Include="Mappers\ShiftMapper.cs" />
+    <Compile Include="Mappers\ShiftTypeMapper.cs" />
+    <Compile Include="Mappers\WorkOrderDataMapper.cs" />
+    <Compile Include="Mappers\WorkOrderRemovalDataMapper.cs" />
+    <Compile Include="Mappers\WorkOrderSearchResultMapper.cs" />
+    <Compile Include="Mappers\WORK_ORDER_STATUSMapper.cs" />
+    <Compile Include="Mappers\WORK_ORDER_TYPEMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.CustomerService.DAL\DUC.CMS.CustomerService.DAL.csproj">
+      <Project>{f3e35610-1ac3-4a40-ae8e-cd27f80d6ef5}</Project>
+      <Name>DUC.CMS.CustomerService.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

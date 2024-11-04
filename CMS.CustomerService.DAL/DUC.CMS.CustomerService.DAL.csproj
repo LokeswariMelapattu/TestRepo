@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3E35610-1AC3-4A40-AE8E-CD27F80D6EF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DUC.CMS.CustomerService.DAL</RootNamespace>
+    <AssemblyName>DUC.CMS.CustomerService.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DUC.Utilities.CryptoEngine">
+      <HintPath>..\ExternalDlls\DUC.Utilities.CryptoEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDlls\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DUC\Useful Dlls\WOQOD\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCOUNT_MANAGER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADDRESS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AREA.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BENEFICIARY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BENEFICIARY_GROUP.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BENEFICIARY_PIN_LOG.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BENEFICIARY_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BENEFICIARY_STATUS_CHANGE_LOG.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BENEFICIARY_STATUS_REASON.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CARD_CENTER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CEILING_LIMIT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CITY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTACT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTACT_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COUNTRY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSP_REQUEST_ATTACHEMENT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSP_REQUEST_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSP_REQUEST_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTAccountBalance.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTAccountTokenSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTAccountTrnsBalance.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTAccountTrnsTypes.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBase.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBatchBeneficiary.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBatchToken.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBatchTokenVehicleMap.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBeneficiaryReceiptPreference.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBeneficiaryRestrictionInput.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBeneficiaryRestrictionResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBeneficiaryStatusHistory.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBillingFrequency.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTBillToDetails.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTConsumedAmountResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTConsumedQuantityResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTConsumedTransNoResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerAccounTypes.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerAttachment.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBeneficiary.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBeneficiaryResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBenSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBillingDate.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBillingDetail.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBillingPeriod.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerBillingSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerCardSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerDetails.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerGroup.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerInfo.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerInformation.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerPayment.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerPaymentTransaction.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerQuota.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerReceiptPreference.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerRefund.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerStatusHistory.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerTagSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerTokenSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerTokenSearchInput.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerTransaction.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerTypes.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTCustomerUnbilledInfo.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDebitCreditRequest.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDictionary.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDriverCard.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDriverCardSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTEmployeeIdentityCard.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTERPEmployee.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTFinanceId.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTFunction.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTGetVehicleInfo.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTIdentityCard.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTInventoryReason.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTIssuanceLocationLoad.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTLocation.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTMapCustomer.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTMappedDriver.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTMapSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTMonth.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTName.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTOrderCancellation.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPage.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPersonalization.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPersonalizationOrder.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPersonalizationOrderSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPersonalizationOrderSearchInput.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPersonalizedData.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPrinterQueue.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPrintingStatus.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTPrintReceiptData.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProduct.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProductCategory.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProductCategoryDTO.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProductDTO.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProductServiceBilling.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProductServiceBillingFreq.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTProperty.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTQualityAssurance.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTReceiptDetails.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTReceiptTransProduct.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRefundRequest.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRefundTypes.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequest.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestAccountClosure.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestAccountManager.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestAttachment.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestCustomer.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestCustomerAddress.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestCustomerContacts.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestDocument.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestPersonalization.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestServiceFee.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestWFHistoryAttachment.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestWFHistoryCustomer.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestWFHistoryWorkOrderINput.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestWorkflowHistoryDTO.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRequestWorkOrder.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroup.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupInfo.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupProduct.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupProfile.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupQuanity.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupStations.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupTime.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupTrans.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionGroupWeekDay.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRestrictionSummary.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTRQSTAttachment.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchEscalatedRequestResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchPendingRequestResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchRequest.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchRequestResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchRQSTRequestResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchTokenIssuance.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchTokenIssuanceResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchTokenToDeliver.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchTokenToDeliverResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSearchVoucherTRX.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTServiceFee.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTSHIFT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTokenAccountSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTokenRestriction.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTokenRestrictionInfo.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTokenSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTokenSearchInput.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTokenStatusHistory.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTransactionEXTVoucherMapSA.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTransactionReversal.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTransactionReversalSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTransactionSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTTransactionSearchInv.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTUnmappedTokenSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTUpliftCustomerProduct.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTVehicleInfo.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTVehicleMakeModel.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTVehicleModel.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTVehicleRegister.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTVehicleRegisterSearchResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTVoucherRequest.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkFlowHistory.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkOrder.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkOrderData.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkOrderDetails.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkOrderRemovalData.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkOrderSearch.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTWorkOrderSearchResult.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CURRENCY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerServiceModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerServiceModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerServiceModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerServiceModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerServiceModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_ACCOUNT_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_ATTACHMENT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_BALANCE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_CLASSIFICATION.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_CONTACT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_PAYMENT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_PIN_LOG.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_PRODUCT_UPLIFT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_REQUEST_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_STATUS_CHANGE_LOG.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_STATUS_REASON.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataExtensions\CTBeneficiaryInfo.cs" />
+    <Compile Include="DataExtensions\CTCustomer.cs" />
+    <Compile Include="DEPOT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMAIL_NOTIFICATION.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities.cs" />
+    <Compile Include="ERP_CUSTOMER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERP_EMPLOYEE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERP_GL_ACCOUNT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\LinqExtension.cs" />
+    <Compile Include="FAMILY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FINANCIAL_ACCOUNT_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IDENTIFICATION_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="INVOICE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INVOICE_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INVOICE_STATUS_HISTORY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="LANGUAGE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOCATION.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOOKUPS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MONTH.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NATIONALITY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NOTIFICATION_CHANNEL.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NOTIFICATION_LANGUAGE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NOTIFICATION_MESSAGE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT_METHOD.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALIZATION_ORDER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALIZATION_ORDER_REASON.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALIZATION_ORDER_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALIZATION_ORDER_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRINTER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT_PRICE_UPLIFT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEIPT_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BeneficiaryRepository.cs" />
+    <Compile Include="Repository\CustomerRepository.cs" />
+    <Compile Include="Repository\FinanceId.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\TokenRepository.cs" />
+    <Compile Include="Repository\UnitOfWork.cs" />
+    <Compile Include="RequestWFHistoryPersonalizationNput.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REQUEST_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_AMOUNT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_DATE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_PRODUCT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_QUANTITY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_STATIONS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_TIME.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_TOKEN.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_TRANSACTION.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_TRANS_NO.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESTRICTION_GROUP_WEEKDAY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RQST_REQUEST_ATTACHEMENT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RQST_REQUEST_CONTACT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RQST_REQUEST_CONTACT_HIST.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RQST_REQUEST_CUSTOMER_ADDRESS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RQST_REQUEST_CUSTOMER_CONTACT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RQST_RQST_CUSTOMER_CNTCT_HIST.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHIFT.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHIFT_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHIFT_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS_MESSAGE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STATION.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STATION_GROUP.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TIME_FREQUENCY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOKEN.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOKEN_IIN.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOKEN_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOKEN_STATUS_CHANGE_HISTORY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOKEN_STATUS_REASON.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOKEN_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USERS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_COLOR.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_INFO.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_INFO_DUMMY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_MAKE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_MODEL.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_REGISTER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_STATE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VEHICLE_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WEEK_DAYS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WORK_ORDER.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WORK_ORDER_REASON.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WORK_ORDER_STATUS.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WORK_ORDER_STATUS_HISTORY.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WORK_ORDER_TYPE.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YEAR.cs">
+      <DependentUpon>CustomerServiceModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="CustomerServiceModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CustomerServiceModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CustomerServiceModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomerServiceModel.edmx</DependentUpon>
+      <LastGenOutput>CustomerServiceModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="CustomerServiceModel.edmx.diagram">
+      <DependentUpon>CustomerServiceModel.edmx</DependentUpon>
+    </None>
+    <None Include="CustomerServiceModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CustomerServiceModel.edmx</DependentUpon>
+      <LastGenOutput>CustomerServiceModel1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
